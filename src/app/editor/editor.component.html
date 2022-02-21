@@ -1,0 +1,27 @@
+<mat-tab-group mat-align-tabs="center" mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+  <mat-tab label="Html">
+    <div class="htmlDiv">
+      <mat-form-field class="input html" appearance="fill">
+        <mat-label>Html</mat-label>
+        <textarea matInput placeholder="Ex. <div></div>..." [(ngModel)]="valorHtml"></textarea>
+      </mat-form-field>
+    </div>
+  </mat-tab>
+  <mat-tab label="Css">
+    <div class="cssDiv">
+      <mat-form-field class="input css" appearance="fill">
+        <mat-label>Css</mat-label>
+        <textarea matInput placeholder="Ex. div{ background-color: #fff; }" [(ngModel)]="valorCss"></textarea>
+      </mat-form-field>
+    </div>
+  </mat-tab>
+  <mat-tab label="JS">
+    <div class="jsDiv">
+      <mat-form-field class="input js" appearance="fill">
+        <mat-label>JS</mat-label>
+        <textarea matInput placeholder="Ex. Let ex = 1" [(ngModel)]="valorJs"></textarea>
+      </mat-form-field>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+<app-viewer [valorHtml]="valorHtml" [valorCss]="valorCss" [valorJs]="valorJs"></app-viewer>

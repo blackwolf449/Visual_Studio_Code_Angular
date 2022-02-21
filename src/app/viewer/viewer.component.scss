@@ -1,0 +1,25 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  width: 200px;
+  border: none;
+  padding: 10px 25px;
+}
+
+iframe {
+  width: 99vw;
+  height: 100vh;
+  border: none;
+  background-color: white;
+}
+
+* {
+  overflow: hidden;
+}
